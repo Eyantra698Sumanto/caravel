@@ -163,5 +163,15 @@ debug_regs debug(
     .wbs_ack_o(wbs_ack_o_debug),
     .wbs_dat_o(wbs_dat_o_debug)
 );
-
+assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
+assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
+dvsdfossbfc #(
+        .BITS(BITS)
+    ) dvsdfossbfc(
+        .clk(clk),
+        .reset(rst),
+        .enable(io_in[0]),
+        .inputData(io_in[8:1])
+        .count(io_out[15:0])
+    );
 endmodule	// user_project_wrapper
