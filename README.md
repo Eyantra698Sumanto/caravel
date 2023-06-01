@@ -8,3 +8,5 @@
 
 ## Code
 The code is available ![HERE](https://github.com/Eyantra698Sumanto/caravel/blob/main/verilog/rtl/dvsdfossbfc.v)
+## Debugging the Code using ChatGPT
+![image](https://github.com/Eyantra698Sumanto/caravel/assets/58599984/3c623abc-c4fa-4cc6-ac10-723651c5c5ee)
