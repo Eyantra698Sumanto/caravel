@@ -7,4 +7,4 @@
 ![image](https://github.com/Eyantra698Sumanto/caravel/assets/58599984/3ea052f7-5110-4cdb-8c14-28449b75c7ea)
 
 ## Code
-The code is available ![HERE][https://github.com/Eyantra698Sumanto/caravel/blob/main/verilog/rtl/dvsdfossbfc.v]
+The code is available ![HERE](https://github.com/Eyantra698Sumanto/caravel/blob/main/verilog/rtl/dvsdfossbfc.v)
