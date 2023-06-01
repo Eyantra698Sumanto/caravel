@@ -29,7 +29,7 @@ set ::env(GLB_RT_OBS) "met1 0 0 $::env(DIE_AREA),\
 					   met5 0 0 $::env(DIE_AREA)"
 
 set ::env(CLOCK_PORT) "user_clock2"
-set ::env(CLOCK_NET) "mprj.clk"
+#set ::env(CLOCK_NET) "mprj.clk"
 
 set ::env(CLOCK_PERIOD) "10"
 
@@ -40,4 +40,14 @@ set ::env(MAGIC_WRITE_FULL_LEF) 0
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/__user_project_wrapper.v"
+	$script_dir/../../verilog/rtl/__user_project_wrapper.v\
+	$script_dir/../../verilog/rtl/debug_regs.v \
+	$script_dir/../../verilog/rtl/dvsdfossbfc.v"
+
+set ::env(VERILOG_FILES_BLACKBOX) " \
+    $script_dir/../../verilog/rtl/defines.v \
+    $script_dir/../../verilog/rtl/__user_project_wrapper.v\
+	$script_dir/../../verilog/rtl/debug_regs.v \
+	$script_dir/../../verilog/rtl/dvsdfossbfc.v"
+
+

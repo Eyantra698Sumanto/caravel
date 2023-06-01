@@ -9,7 +9,9 @@ module debug_regs (
     input [31:0] wbs_dat_i,
     input [31:0] wbs_adr_i,
     output reg wbs_ack_o,
-    output reg [31:0] wbs_dat_o);
+    output reg [31:0] wbs_dat_o
+
+);
 
     reg [31:0] debug_reg_1;
     reg [31:0] debug_reg_2;

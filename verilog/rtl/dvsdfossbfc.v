@@ -1,14 +1,14 @@
 /*Bloom Filter Counter Design*/
 module dvsdfossbfc (
-  input wire clk,                // Clock input
-  input wire reset,              // Reset input
-  input wire enable,             // Enable input
-  input wire [7:0] inputData,     // Input data to be counted
-  output wire [15:0] count        // Counter value output
+  input  clk,                // Clock input
+  input reset,              // Reset input
+  input enable,             // Enable input
+  input  [7:0] inputData,     // Input data to be counted
+  output [15:0] count        // Counter value output
 );
 
-  reg [15:0] counter;
-  reg [15:0] bloomFilter;
+  wire [15:0] counter;
+  wire [15:0] bloomFilter;
 
   always @(posedge clk or posedge reset) begin
     if (reset) begin
