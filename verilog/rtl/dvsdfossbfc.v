@@ -1,14 +1,16 @@
 /*Bloom Filter Counter Design*/
+/* verilator lint_off WIDTHTRUNC */
+/* verilator lint_off UNUSEDSIGNAL */
 module dvsdfossbfc (
   input  clk,                // Clock input
   input reset,              // Reset input
   input enable,             // Enable input
   input  [7:0] inputData,     // Input data to be counted
-  output [15:0] count        // Counter value output
+  output reg [15:0] count        // Counter value output
 );
 
-  wire [15:0] counter;
-  wire [15:0] bloomFilter;
+  reg [15:0] counter;
+  reg [15:0] bloomFilter;
 
   always @(posedge clk or posedge reset) begin
     if (reset) begin

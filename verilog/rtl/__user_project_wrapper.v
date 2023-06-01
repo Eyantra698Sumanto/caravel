@@ -150,7 +150,7 @@ user_project_gpio_example gpio_testing(
     .io_out(io_out),
     .io_oeb(io_oeb));
 `endif
-/*
+
 debug_regs debug(
     .wb_clk_i(wb_clk_i),
     .wb_rst_i(wb_rst_i),
@@ -162,7 +162,7 @@ debug_regs debug(
     .wbs_dat_i(wbs_dat_i),
     .wbs_ack_o(wbs_ack_o_debug),
     .wbs_dat_o(wbs_dat_o_debug)
-);*/
+);
 wire rst;
 wire enable;
 assign rst = io_in[0];
