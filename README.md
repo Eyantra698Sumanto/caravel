@@ -1,6 +1,6 @@
 # AI Generated Design Challenge
 =========================================
-# AI-Generated Bloom Filter Counter
+## AI-Generated Bloom Filter Counter
 ============================================
 ## Design extracted from ChatGPT
 ![image](https://github.com/Eyantra698Sumanto/caravel/assets/58599984/13be0cba-b260-44ad-a19b-01e909229f46)
